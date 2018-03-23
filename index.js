@@ -20,9 +20,10 @@ restService.post("/echo", function(req, res) {
     req.body.result.parameters.echoText
       ? req.body.result.parameters.echoText
       : "Seems like some problem. Speak again.";
-  if( speech == "Mike" || "Mike Admas" || "Michael" || "Michael Adams") {
+  if( speech == "mike" || speech == "mike admas" || speech ==  "michael" || speech == "michael adams") {
      speech = "You said your name is Ass. Is this correct?";
   }
+  else if(speech == "no") speech = "Let's try that again then.";
   return res.json({
     speech: speech,
     displayText: speech,
