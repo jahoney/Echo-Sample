@@ -24,7 +24,7 @@ restService.post("/echo", function(req, res) {
      speech = "You said your name is Ass. Is this correct?";
   }
   else if(speech == "no") speech = "Let's try that again then. What is your name?";
-  else speech = "Hi " + speech;
+  else speech = "Hi " + speech + ". who else is there?";
   return res.json({
     speech: speech,
     displayText: speech,
