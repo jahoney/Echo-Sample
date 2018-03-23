@@ -23,7 +23,7 @@ restService.post("/echo", function(req, res) {
   if( speech == "mike" || speech == "mike admas" || speech ==  "michael" || speech == "michael adams") {
      speech = "You said your name is Ass. Is this correct?";
   }
-  else if(speech == "no") speech = "Let's try that again then.";
+  else if(speech == "no") speech = "Let's try that again then. What is your name?";
   return res.json({
     speech: speech,
     displayText: speech,
