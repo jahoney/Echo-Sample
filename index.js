@@ -1,5 +1,19 @@
 "use strict";
 
+<script src="https://www.gstatic.com/firebasejs/4.12.0/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyC2Kt68ZN5Y5am1tt46s0jR3Z1RYxksqD8",
+    authDomain: "diceroller-14bbc.firebaseapp.com",
+    databaseURL: "https://diceroller-14bbc.firebaseio.com",
+    projectId: "diceroller-14bbc",
+    storageBucket: "diceroller-14bbc.appspot.com",
+    messagingSenderId: "434246439000"
+  };
+  firebase.initializeApp(config);
+</script>
+
 const express = require("express");
 const bodyParser = require("body-parser");
 
